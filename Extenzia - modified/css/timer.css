@@ -1,0 +1,71 @@
+:root {
+--smaller: .75;
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.container {
+color: #fbf6f6;
+margin: 0 auto;
+text-align: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Oxygen-Sans,
+Ubuntu,
+Cantarell,
+"Helvetica Neue",
+sans-serif;
+}
+.container h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: oblique;
+    letter-spacing: 2px;
+}
+.container h1 {
+font-weight: normal;
+letter-spacing: .125rem;
+text-transform: uppercase;
+}
+.countdown{
+    padding-top: 10px;
+}
+.container li {
+display: inline-block;
+font-size: 1.5em;
+list-style-type: none;
+padding: 1em;
+text-transform: uppercase;
+}
+.container li span {
+display: block;
+font-size: 4.5rem;
+}
+.emoji {
+display: none;
+padding: 1rem;
+}
+.emoji span {
+font-size: 4rem;
+padding: 0 .5rem;
+}
+@media all and (max-width: 768px) {
+.container h1 {
+font-size: calc(1.5rem * var(--smaller));
+}
+.container li {
+font-size: calc(1rem * var(--smaller));
+}
+.container li span {
+font-size: calc(3.375rem * var(--smaller));
+}
+
+}
